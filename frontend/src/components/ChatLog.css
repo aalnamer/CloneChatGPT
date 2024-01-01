@@ -1,0 +1,64 @@
+.chat-log {
+  text-align: left;
+  max-height: 450px;
+  overflow: auto;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent;
+}
+.chat-log::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: transparent;
+}
+
+.chat-log::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.chat-message {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.chat-message-container {
+  padding: 12px;
+  display: flex;
+  padding-left: 24px;
+  padding-right: 24px;
+  max-width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.message {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.chat-message.chatgpt {
+  background-color: #444654;
+}
+
+.avatar.chatgpt {
+  width: 41px;
+  height: 41px;
+}
+.loading-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  max-width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #343541; /* Update to match the chat box background color */
+  color: #f5f5f5; /* Update to match the text color */
+  font-size: 14px;
+}
+
+.clear-icon {
+  display: flex;
+}
